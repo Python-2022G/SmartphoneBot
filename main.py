@@ -44,8 +44,14 @@ def products(update: Update, context: CallbackContext):
     brand = update.callback_query.data.split(':')[1]
     all_products = db.get_products(brand)
     
+    update.callback_query.answer(brand)
+    inline_keyboard = []
     for product in all_products:
-        update.callback_query.answer(product['name'])
+        inline_keyboard.append([InlineKeyboardButton(text=product['name'],
+                                                     callback_data=f"product:{product['name']}")])
+    update.callback_query.message.reply_text(text='choose',
+                                                  reply_markup=InlineKeyboardMarkup(inline_keyboard=inline_keyboard))
+        
 
 
 def contact(update: Update, context: CallbackContext):
