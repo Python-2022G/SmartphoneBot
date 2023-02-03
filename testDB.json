@@ -1,0 +1,30 @@
+{
+    "Samsung": {
+        "1": {
+            "name": "iphone x",
+            "ram": "64"
+        },
+        "2": {
+            "name": "iphone x",
+            "ram": "64"
+        },
+        "3": {
+            "name": "iphone x",
+            "ram": "64"
+        }
+    },
+    "Apple": {
+        "1": {
+            "name": "iphone x",
+            "ram": "64"
+        },
+        "2": {
+            "name": "iphone x",
+            "ram": "64"
+        },
+        "3": {
+            "name": "iphone x",
+            "ram": "64"
+        }
+    }
+}
